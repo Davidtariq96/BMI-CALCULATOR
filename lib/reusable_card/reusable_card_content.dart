@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-const iconSize = 50.0;
+import '../constants/constants.dart';
 
 class ReusableCardContent extends StatelessWidget {
   final String gender;
@@ -18,7 +17,7 @@ class ReusableCardContent extends StatelessWidget {
           flex: 15,
           child: Icon(
             fonts,
-            size: iconSize,
+            size: kIconSize,
           ),
         ),
         const SizedBox(
@@ -28,10 +27,7 @@ class ReusableCardContent extends StatelessWidget {
           flex: 7,
           child: Text(
             gender,
-            style: const TextStyle(
-              fontSize: 18.0,
-              color: Color(0XFF8D8E98),
-            ),
+            style: kTextStyle,
           ),
         )
       ],
